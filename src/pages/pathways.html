@@ -1,0 +1,229 @@
+<!--meta
+title: Development Pathways
+description: Three development pathways, Market Readers, Market Operators and Capital Thinkers, each building a distinct market ability. See who each is for and how it works.
+nav: pathways
+body: page-pathways
+-->
+
+<section class="page-hero" aria-labelledby="pw-title">
+  <div class="container page-hero__grid page-hero__grid--art">
+    <div>
+      <p class="eyebrow">Development Pathways</p>
+      <h1 id="pw-title">Three roles. <em>One progression.</em></h1>
+      <p class="lead">Each pathway builds a distinct ability: interpretation, execution or capital judgment. Each is a complete path, not partial education.</p>
+    </div>
+    <div class="page-hero__art">{{art:pathways}}</div>
+  </div>
+</section>
+
+<!-- Overview: progression, finder, comparison -->
+<section class="section section--tight" id="overview" aria-labelledby="overview-title">
+  <div class="container">
+    <h2 id="overview-title" class="sr-only">Pathways overview</h2>
+
+    <div class="pcards pcards--lite">
+      <article class="pcard reveal">
+        {{fig:readers}}
+        <p class="pcard__k">01 &middot; Learn to see</p>
+        <h3 class="pcard__t">Market Readers</h3>
+        <p class="pcard__tag">Interpret.</p>
+        <a class="link-arrow" href="#readers" data-pathlink="0">Pathway detail {{icon:arrow}}</a>
+      </article>
+      <article class="pcard reveal" style="--rd:80ms">
+        {{fig:operators}}
+        <p class="pcard__k">02 &middot; Learn to act</p>
+        <h3 class="pcard__t">Market Operators</h3>
+        <p class="pcard__tag">Decide and execute.</p>
+        <a class="link-arrow" href="#operators" data-pathlink="1">Pathway detail {{icon:arrow}}</a>
+      </article>
+      <article class="pcard reveal" style="--rd:160ms">
+        {{fig:thinkers}}
+        <p class="pcard__k">03 &middot; Learn to allocate</p>
+        <h3 class="pcard__t">Capital Thinkers</h3>
+        <p class="pcard__tag">Allocate and preserve.</p>
+        <a class="link-arrow" href="#thinkers" data-pathlink="2">Pathway detail {{icon:arrow}}</a>
+      </article>
+    </div>
+
+    <div class="finder finder--page" data-finder>
+      <p class="finder__q" id="finder-q">Where do you struggle most?</p>
+      <div class="chips" role="group" aria-labelledby="finder-q">
+        <button class="chip" type="button" data-path="0" aria-pressed="false">Interpreting the market</button>
+        <button class="chip" type="button" data-path="1" aria-pressed="false">Acting on my decisions</button>
+        <button class="chip" type="button" data-path="2" aria-pressed="false">Allocating and preserving capital</button>
+      </div>
+      <p class="finder__result" data-finder-result aria-live="polite">Not sure? The <a href="begin.html">readiness assessment</a> recommends a pathway.</p>
+    </div>
+
+    <details class="more compare-more">
+      <summary class="more__sum"><span class="vi-disc">{{ic:ledger:sm}}</span><span class="more__lbl">Compare the pathways side by side</span><span class="more__plus" aria-hidden="true"></span></summary>
+      <div class="compare">
+      <table class="compare__table">
+        <thead>
+          <tr><th scope="col"><span class="sr-only">Attribute</span></th><th scope="col">Market Readers</th><th scope="col">Market Operators</th><th scope="col">Capital Thinkers</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Learn to</th><td data-label="Market Readers">See</td><td data-label="Market Operators">Act</td><td data-label="Capital Thinkers">Allocate</td></tr>
+          <tr><th scope="row">Builds the ability to</th><td data-label="Market Readers">Interpret</td><td data-label="Market Operators">Decide and execute</td><td data-label="Capital Thinkers">Allocate and preserve capital</td></tr>
+          <tr><th scope="row">Purpose</th><td data-label="Market Readers">Independent market perception</td><td data-label="Market Operators">Consistent execution under live conditions</td><td data-label="Capital Thinkers">Capital preservation and scalable growth</td></tr>
+          <tr><th scope="row">Learning and support</th><td data-label="Market Readers">Live learning, guided practice, concept material, assessments, feedback</td><td data-label="Market Operators">Daily live execution sessions, real-time trading, risk guidance, performance review</td><td data-label="Capital Thinkers">Strategic discussions, macro and regime intelligence, portfolio systems, capital reviews</td></tr>
+          <tr><th scope="row">Intended development</th><td data-label="Market Readers">Clear market understanding and independent analysis</td><td data-label="Market Operators">Execution consistency and process-driven behaviour</td><td data-label="Capital Thinkers">Institutional-grade market judgment</td></tr>
+        </tbody>
+      </table>
+    </details>
+    </div>
+  </div>
+</section>
+
+<!-- Pathway detail (tabbed; all panels visible without JavaScript) -->
+<section class="ptabs" id="pathway-detail" aria-label="Pathway details" data-tabs data-tabs-hash>
+  <div class="ptabs__bar">
+    <div class="container">
+      <div class="ptabs__list" role="tablist" aria-label="Choose a pathway">
+        <a class="ptabs__tab" role="tab" id="pt-readers" href="#readers" aria-selected="true" aria-controls="readers"><span class="ptabs__n">{{ic:eye:sm}}</span>Market Readers</a>
+        <a class="ptabs__tab" role="tab" id="pt-operators" href="#operators" aria-selected="false" aria-controls="operators" tabindex="-1"><span class="ptabs__n">{{ic:operator:sm}}</span>Market Operators</a>
+        <a class="ptabs__tab" role="tab" id="pt-thinkers" href="#thinkers" aria-selected="false" aria-controls="thinkers" tabindex="-1"><span class="ptabs__n">{{ic:rings:sm}}</span>Capital Thinkers</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- 01 Market Readers -->
+    <div class="pathway" role="tabpanel" id="readers" aria-labelledby="pt-readers">
+      <header class="pathway__head">
+        <p class="pathway__kicker">01 &middot; Learn to See</p>
+        <h2>Market Readers</h2>
+        <p class="pathway__tag">Build the ability to interpret.</p>
+        <p class="pathway__purpose">Purpose: independent market perception.</p>
+        {{fig:readers}}
+      </header>
+      <div class="pbody">
+        <ul class="tiles pglance">
+          <li class="tile"><span class="vi-disc">{{ic:person}}</span><h3>Who it is for</h3><p>Traders with some market exposure whose knowledge sits as isolated concepts, and who lean on indicators, opinions or content to read the market.</p></li>
+          <li class="tile"><span class="vi-disc">{{ic:process}}</span><h3>How it works</h3><p>Live learning on concept material, applied through guided practice. Assessments check understanding; feedback closes the loop.</p></li>
+          <li class="tile"><span class="vi-disc">{{ic:clipboard}}</span><h3>Readiness</h3><p>Beyond the beginner stage: familiar with core concepts, typically six months of exposure. Confirmed through the readiness assessment.</p></li>
+        </ul>
+        <div class="pcols">
+          <div class="pcol">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:gap:sm}}</span>Problems it addresses</h3>
+            <ul class="ticks"><li>Fragmented market understanding</li><li>Information overload, unclear priorities</li><li>Dependence on indicators and outside opinions</li><li>Concepts known, but not when and why to use them</li></ul>
+          </div>
+          <div class="pcol pcol--b">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:plan:sm}}</span>Capabilities it aims to develop</h3>
+            <ul class="ticks"><li>Organize existing market knowledge</li><li>Understand context, prioritize what is relevant</li><li>Develop structured interpretations and assessments</li><li>Apply concepts through guided practice and feedback</li></ul>
+          </div>
+        </div>
+        <div class="pfoot">
+          <div class="pfoot__inc">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:material:sm}}</span>Included</h3>
+            <ul class="tags"><li>Live learning</li><li>Guided practice</li><li>Concept material</li><li>Assessments</li><li>Feedback</li></ul>
+          </div>
+          <div class="pfoot__prog">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:chart:sm}}</span>What progress should look like</h3>
+            <p>Structured, independent interpretation. Less reliance on indicators and outside opinions. A clearer sense of what matters in a given market.</p>
+          </div>
+        </div>
+        <div class="pcta"><a class="btn btn--primary" href="begin.html?pathway=readers#assessment">Apply or enquire {{icon:arrow}}</a></div>
+      </div>
+    </div>
+
+    <!-- 02 Market Operators -->
+    <div class="pathway" role="tabpanel" id="operators" aria-labelledby="pt-operators">
+      <header class="pathway__head">
+        <p class="pathway__kicker">02 &middot; Learn to Act</p>
+        <h2>Market Operators</h2>
+        <p class="pathway__tag">Build the ability to decide and execute.</p>
+        <p class="pathway__purpose">Purpose: consistent execution under live conditions.</p>
+        {{fig:operators}}
+      </header>
+      <div class="pbody">
+        <ul class="tiles pglance">
+          <li class="tile"><span class="vi-disc">{{ic:person}}</span><h3>Who it is for</h3><p>Traders who understand markets but struggle to act on that understanding consistently when real money is at stake.</p></li>
+          <li class="tile"><span class="vi-disc">{{ic:process}}</span><h3>How it works</h3><p>Daily live execution in real-time conditions, with risk guidance during the session and structured performance review after it.</p></li>
+          <li class="tile"><span class="vi-disc">{{ic:clipboard}}</span><h3>Readiness</h3><p>Working market knowledge and readiness to practise in live conditions. Confirmed through the readiness assessment.</p></li>
+        </ul>
+        <div class="pcols">
+          <div class="pcol">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:gap:sm}}</span>Problems it addresses</h3>
+            <ul class="ticks"><li>Hesitation and constant second-guessing</li><li>Analysis paralysis and missed entries</li><li>Emotional instability in live markets</li><li>Inconsistent risk execution under pressure</li></ul>
+          </div>
+          <div class="pcol pcol--b">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:plan:sm}}</span>Capabilities it aims to develop</h3>
+            <ul class="ticks"><li>Translate analysis into actionable decisions</li><li>Define risk and decision conditions</li><li>Build execution discipline under uncertainty</li><li>Review decisions, behaviour and execution quality</li></ul>
+          </div>
+        </div>
+        <div class="pfoot">
+          <div class="pfoot__inc">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:material:sm}}</span>Included</h3>
+            <ul class="tags"><li>Daily live execution sessions</li><li>Real-time trading</li><li>Risk guidance</li><li>Performance review</li></ul>
+          </div>
+          <div class="pfoot__prog">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:chart:sm}}</span>What progress should look like</h3>
+            <p>Consistent, process-driven behaviour. Risk defined before entry and followed. A clear view of what was decision, execution and outcome.</p>
+          </div>
+        </div>
+        <div class="pcta"><a class="btn btn--primary" href="begin.html?pathway=operators#assessment">Apply or enquire {{icon:arrow}}</a></div>
+      </div>
+    </div>
+
+    <!-- 03 Capital Thinkers -->
+    <div class="pathway" role="tabpanel" id="thinkers" aria-labelledby="pt-thinkers">
+      <header class="pathway__head">
+        <p class="pathway__kicker">03 &middot; Learn to Allocate</p>
+        <h2>Capital Thinkers</h2>
+        <p class="pathway__tag">Build the ability to allocate and preserve capital.</p>
+        <p class="pathway__purpose">Purpose: capital preservation and scalable growth. Elite pathway.</p>
+        {{fig:thinkers}}
+      </header>
+      <div class="pbody">
+        <ul class="tiles pglance">
+          <li class="tile"><span class="vi-disc">{{ic:person}}</span><h3>Who it is for</h3><p>Experienced participants ready to move from individual trades to capital, portfolio and regime-level judgment.</p></li>
+          <li class="tile"><span class="vi-disc">{{ic:process}}</span><h3>How it works</h3><p>Strategic discussions and regime-level intelligence, applied to portfolio systems and examined through periodic capital reviews.</p></li>
+          <li class="tile"><span class="vi-disc">{{ic:clipboard}}</span><h3>Readiness</h3><p>Elite pathway. Established market experience, confirmed through the readiness assessment and a conversation.</p></li>
+        </ul>
+        <div class="pcols">
+          <div class="pcol">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:gap:sm}}</span>Problems it addresses</h3>
+            <ul class="ticks"><li>Activity prioritized over longevity</li><li>Position thinking without portfolio context</li><li>A limited view of capital cycles and regimes</li><li>Short-horizon reviews of long-horizon decisions</li></ul>
+          </div>
+          <div class="pcol pcol--b">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:plan:sm}}</span>Capabilities it aims to develop</h3>
+            <ul class="ticks"><li>Understand capital cycles and market regimes</li><li>Develop portfolio and position-level thinking</li><li>Weigh risk, exposure and allocation</li><li>Review decisions through a longer-term lens</li></ul>
+          </div>
+        </div>
+        <div class="pfoot">
+          <div class="pfoot__inc">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:material:sm}}</span>Included</h3>
+            <ul class="tags"><li>Strategic discussions</li><li>Macro and regime intelligence</li><li>Portfolio systems</li><li>Capital reviews</li></ul>
+          </div>
+          <div class="pfoot__prog">
+            <h3 class="pcol__h"><span class="pcol__ico">{{ic:chart:sm}}</span>What progress should look like</h3>
+            <p>Deliberate allocation and exposure decisions, reviewed over longer horizons and oriented toward preservation and longevity.</p>
+          </div>
+        </div>
+        <div class="pcta"><a class="btn btn--primary" href="begin.html?pathway=thinkers#assessment">Apply or enquire {{icon:arrow}}</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Development, not guarantees -->
+<section class="section section--crimson guard" aria-labelledby="guard-title">
+  <div class="container guard__grid">
+    <div>
+      <p class="eyebrow">A clear distinction</p>
+      <h2 id="guard-title">Intended development, <em>not guaranteed outcomes.</em></h2>
+    </div>
+    <div class="guard__body">
+      <ul class="guard__pts">
+        <li>{{ic:shield:sm}}<span>Every pathway describes what it aims to develop.</span></li>
+        <li>{{ic:check:sm}}<span>No promise of profitability, consistency or any specific result.</span></li>
+        <li>{{ic:risk:sm}}<span>Markets carry risk, and outcomes depend on much more than education.</span></li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn--light" href="begin.html">Take the readiness assessment {{icon:arrow}}</a>
+        <a class="btn btn--outline-light" href="risk.html">Read the Risk Disclosure</a>
+      </div>
+    </div>
+  </div>
+</section>
